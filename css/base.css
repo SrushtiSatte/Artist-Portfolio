@@ -1,0 +1,28 @@
+/* base.css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1c1c1c;
+  color: #333;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slide {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  padding: 120px 80px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

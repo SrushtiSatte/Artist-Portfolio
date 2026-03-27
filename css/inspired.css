@@ -1,0 +1,106 @@
+/* -------------------- */
+/* INSPIRED BY SLIDE    */
+/* -------------------- */
+
+.inspired {
+  position: relative;         /* so pseudo-element is relative to this section */
+  min-height: 100vh;
+  text-align: center;
+  color: #c28200;             /* text color */
+  background-color: rgb(37, 33, 33);     /* your gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.inspired::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('images/inspobg1.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.4;               /* adjust image opacity here */
+  z-index: 0;                 /* behind text */
+}
+
+.inspired h1 {
+  position: absolute;         /* stay above background image */
+  top:60px;
+  right:250px;
+  z-index: 1;
+  font-size: 140px;
+  margin-top: 10px;
+  font-family: Impact;
+  letter-spacing: 0.02cqi;
+}
+.inspired h1 .subtext {
+  display: block;
+  font-family: 'Freestyle Script';
+  font-weight: 200;
+  font-size: 100px;
+  color: #faf7f5c6;
+  margin-top: -90px;       /* negative margin to overlap slightly */
+  letter-spacing: 2px;
+  /* transform: rotate(-5deg);    
+  transform-origin: left;   */
+}
+.leftside-text {
+  position: absolute;
+  top: 100px;     /* adjust based on your subtext size */
+  left: 50px;
+  z-index: 1;
+  text-align: left;
+}
+.leftside-text .line {
+  font-family: 'Poppins', sans-serif;
+  color: #faf7f5;
+  margin-bottom: 12px;
+  max-width: 400px;      /* controls where wrap happens */
+  white-space: normal;   /* allow wrapping */
+  word-wrap: break-word; /* wrap long words */
+}
+
+.line-one {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.line-two {
+  position: absolute;
+  font-size: 18px;
+  opacity: 0.9;
+  top: 200px;
+}
+.line-three {
+    position :absolute;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.7;
+  top: 500px;
+}
+/* Container for 4 images */
+.bottom-images {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  z-index: 2;
+}
+/* Image styling */
+.bottom-images img {
+  width: 220px;          /* adjust size */
+  height: 220px;
+  object-fit: cover;
+  border: 3px solid #fafafa;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (optional, looks great) */
+.bottom-images img:hover {
+  transform: scale(1.08);
+}

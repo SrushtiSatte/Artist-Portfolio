@@ -1,0 +1,137 @@
+
+/* -------------------- */
+/* GALLERY SLIDE       */
+/* -------------------- */
+
+.gallery {
+  position: relative;
+  min-height: 100vh;
+  background: #faf7f5;
+  color: #595252;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;   /* ✅ vertical center */
+  padding: 0;
+}
+.gallery::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background: #611818;   /* change this color */
+  z-index: 0;
+}
+.gallery-side-text {
+  position: absolute;
+  left: 12.5%;                 /* center of 25% red strip */
+  top: 50%;                    /* vertical center */
+  transform: translate(-50%, -50%) rotate(180deg);
+  display: inline-block;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  font-size: 20px;
+  letter-spacing: 6px;
+  color: #fafafa;
+  font-weight: 500;
+
+  z-index: 5;
+}
+
+.gallery-side-text span {
+  position:relative;
+  display: block;
+  letter-spacing: 8px;
+}
+.gallery-side-text .fir{
+  position:absolute;
+  font-family: 'Kunstler Script';
+  font-size: 100px;
+  color: #fafafaa6;
+  font-weight: 300; 
+  z-index: 5;
+  transform:translateY(-50%);
+  right:-60px;
+  bottom:40px;
+}
+.gallery-side-text .next {
+  font-size: 100px;
+  color: #2d1e1e7f;
+  font-weight: 300;
+  z-index:4;
+  line-height:1;
+  position:relative;
+  top:50px;
+}
+.gallery-scroll {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;     /* ✅ vertical center */
+  gap: 30px;
+
+  height: 100vh;           /* full screen height */
+  width: 75%;              /* starts AFTER red section */
+
+  margin-left: 25%;        /* aligns after red part */
+  padding: 0 60px 0 0;     /* ❌ no left padding */
+
+  overflow-x: auto;
+  overflow-y: visible;
+
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none;                /* Chrome / Safari */
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
+/* individual cards */
+.gallery-card {
+  width:fit-content;
+  background: #f4f2e6;
+  padding: 20px;
+  border-radius: 14px;
+
+  scroll-snap-align: start;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+  position:relative;
+  z-index:6;
+
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.5);
+  z-index:10;
+}
+
+/* image */
+.gallery-card img {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  display:block
+}
+
+/* title */
+.gallery-card .title {
+  margin-top: 14px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #444;
+}
+

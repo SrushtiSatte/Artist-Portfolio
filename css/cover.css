@@ -1,0 +1,9 @@
+.cover {
+  background: #faf7f5;
+  background-size: cover;
+  background-position: center;
+  color: #251818;
+  text-align: center;
+}
+.cover h1 { font-size: 64px; font-weight: 600; letter-spacing: 2px; }
+.cover h2 { font-size: 24px; font-weight: 300; margin-top: 10px; }

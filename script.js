@@ -20,4 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     clearInterval(scrollInterval);
   });
 
-});
+});  
+
+/* MENU TOGGLE FUNCTION */
+
+function toggleMenu() {
+  document
+    .getElementById("topNavbar")
+    .classList.toggle("show");
+}

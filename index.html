@@ -9,32 +9,60 @@
 
 <script src="script.js" defer></script>
   <!-- CSS File -->
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/cover.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/inspired.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/art.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/exploration.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
+<!-- MENU BUTTON -->
+<div class="menu-btn" onclick="toggleMenu()">
+  ▼
+</div>
+
+<!-- SIDEBAR NAVBAR -->
+<nav class="top-navbar" id="topNavbar">
+
+  <a href="#cover">Home</a>
+  <a href="#about">About</a>
+  <a href="#inspired">Inspiration</a>
+  <a href="#skills">Skills</a>
+  <a href="#statement">Art</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#end">Explore</a>
+
+</nav>
+
   <!-- COVER SLIDE -->
-  <section class="slide cover">
+  <section class="slide cover" id="cover">
     <h1>Artist Portfolio</h1>
     <h2>Srushti Satte</h2>
   </section>
 
   <!-- ABOUT SLIDE -->
-  <section class="slide about">
+  <section class="slide about" id="about">
     <div class="about-text">
         <h1>About Me</h1>
-        <p>Creative artist expressing emotions through colors and form.</p>
+        <p>The eyes of mine see the world with quiet detachment, observing its patterns, shadows, and subtle truths. Emotions, though distant, become colors and shapes on my canvas. Art lets me speak what I do not feel aloud — a mirror to my inner stillness and unspoken reflections.</p>
     </div>
     
     <div class="about-images">
       <img src="images/gridbg1.png" class="bg-image" alt="Background inspiration">
-      <img src="images/shiv.png" class="overlay-image" alt="Main inspiration">
+      <img src="art imgs/shiva.png" class="overlay-image" alt="Main inspiration">
     </div>
   </section>
 
+  
   <!-- INSPIRED BY SLIDE (OVERLAP HAPPENS HERE) -->
-  <section class="slide inspired">
+  <section class="slide inspired" id="inspired">
     <h1>Inspired By
         <span class="subtext">Nature & Beyond!</span>
     </h1>
@@ -44,7 +72,7 @@
         <div class="line line-three">Art that speaks without words</div>
     </div>
     <div class="bottom-images">
-        <img src="images/inspo1.jpg" alt="">
+        <img src="images/inspo1.jpeg" alt="">
         <img src="images/inspo2.jpg" alt="">
         <img src="images/inspo3.jpg" alt="">
         <img src="images/inspo4.jpg" alt="">
@@ -53,28 +81,51 @@
   </section>
 
   <!-- SKILLS SLIDE -->
-  <section class="slide skills">
+  <section class="slide skills" id="skills">
     <h1>My Skills</h1>
     <ul>
       <li>Fine Art Painting</li>
-      <li>Calligraphy</li>
-      <li>Digital Illustration</li>
+      <li>Artistic Sketching</li>
+      <li>Digital Illusion</li>
+      <li>Sculptural Art</li>
+
     </ul>
         <div class="skills-images">
-            <img src="images/inspo1.jpg" alt="skill image 1">
-            <img src="images/inspo2.jpg" alt="skill image 2">
-            <img src="images/inspo3.jpg" alt="skill image 3">
+            <img src="art imgs/voyage.jpeg" alt="skill image 1">
+            <img src="art imgs/levi.jpeg" alt="skill image 2">
+            <img src="art imgs/mom.png" alt="skill image 3">
+            <img src="art imgs/sculpting.jpeg" alt="skill image 4">
+
         </div>
     <p class="skills-text">Exploring creativity through skill & soul. Always wondered how art feels from every otehr perspective and then realised there is just a feel that we experience in an art!</p>
   </section>
 
   <!-- ART STATEMENT SLIDE -->
-<section class="slide art-statement">
-  <!-- Images -->
-  <img src="images/inspo1.jpg" class="art-img img-left" alt="">
-  <img src="images/inspo2.jpg" class="art-img img-right" alt="">
-  <img src="images/inspo3.jpg" class="art-img img-bottom" alt="">
-  <!-- Text -->
+<section class="slide art-statement" id="statement">
+ <!-- Image 1 -->
+  <div class="img-box img-left">
+    <img src="images/inspo21.jpeg" class="art-img" alt="">
+    <div class="overlay">
+      <p>Drifting in a fragile paper boat, the soul sails vast uncertainties, proving even delicate dreams carry courage strong enough to cross oceans.</p>
+    </div>
+  </div>
+
+  <!-- Image 2 -->
+  <div class="img-box img-right">
+    <img src="images/inspo22.jpeg" class="art-img" alt="">
+    <div class="overlay">
+      <p>With only a brush in fragile wings, art lifts the heaviest emotions, carrying silent storms effortlessly, feel weightless in expression.</p>
+    </div>
+  </div>
+
+  <!-- Image 3 -->
+  <div class="img-box img-bottom">
+    <img src="images/inspo23.jpeg" class="art-img" alt="">
+    <div class="overlay">
+      <p>Drawn beyond the canvas, the soul longs for art’s embrace, where painted arms radiate warmth, belonging, and a quiet promise of connection.</p>
+    </div>
+  </div>
+
   <div class="art-text">
     <span class="small">ART</span>
     <span class="light">is a</span>
@@ -85,7 +136,7 @@
 </section>
 
   <!-- GALLERY SLIDE -->
-<section class="slide gallery">
+<section class="slide gallery" id="gallery">
   <div class="gallery-side-text"> 
     <span class="fir">Srushti's   </span>
     <span class="next">GALLERY</span>
@@ -94,43 +145,98 @@
   <div class="gallery-scroll" id="galleryscroll">
 
     <div class="gallery-card">
-      <img src="images/inspo1.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/55hertz.jpeg" alt="">
+      <p class="title">THE 55-HERTZ - LONELY STAR</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo2.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/rajhans.jpeg" alt="">
+      <p class="title">THE RAJHANS</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo3.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/voyage.jpeg" alt="">
+      <p class="title">THE VOYAGE</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo4.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/Horsepower.jpeg" alt="">
+      <p class="title">THE REASON FOR HORSEPOWER</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo4.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/firstfrost.jpeg" alt="">
+      <p class="title">FIRST FROST</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo4.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/desire.jpeg" alt="">
+      <p class="title">JUST A DESIRE OR MIRROR</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo4.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/goldenhr.jpeg" alt="">
+      <p class="title">THE GOLDEN HOUR</p>
     </div>
 
     <div class="gallery-card">
-      <img src="images/inspo4.jpg" alt="">
-      <p class="title">THE TITLE</p>
+      <img src="art imgs/mom.png" alt="">
+      <p class="title">MOTHER</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/great.jpeg" alt="">
+      <p class="title">THE GREAT HARMLESS BEING</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/vish.jpeg" alt="">
+      <p class="title">VISH</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/blackpearl.jpeg" alt="">
+      <p class="title">SHE'S MY BLACKPEARL</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/Madhav.jpeg" alt="">
+      <p class="title">VISHNU - THE PRESERVER</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/levi.jpeg" alt="">
+      <p class="title">LEVI ~ yehet</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/cloud9.jpeg" alt="">
+      <p class="title">CLOUD9</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/clarity.jpeg" alt="">
+      <p class="title">WARMTH</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/moonlight.jpeg" alt="">
+      <p class="title">MOONLIGHT</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/timeless.jpeg" alt="">
+      <p class="title">TIMELESS BEAUTY</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/aruya.jpeg" alt="">
+      <p class="title">ARUYA</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="art imgs/pengsoo.jpeg" alt="">
+      <p class="title">PENGSOO</p>
     </div>
 
   </div>
@@ -138,9 +244,16 @@
 
 
   <!-- FINAL SLIDE -->
-  <section class="slide exploration">
-    <h1>Exploring the Depths of Art</h1>
-  </section>
+<section class="slide exploration" id="end">
+  <h1>Exploring the Depths of Art</h1>
+
+  <a href="https://www.instagram.com/ekstra_urdinary" 
+     target="_blank" 
+     class="insta-link">
+     Follow my art journey on Instagram →
+  </a>
+
+</section>
 
 </body>
 </html>

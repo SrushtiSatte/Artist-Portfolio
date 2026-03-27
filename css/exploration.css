@@ -1,0 +1,55 @@
+
+/* -------------------- */
+/* FINAL SLIDE          */
+/* -------------------- */
+
+.exploration {
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+.exploration h1 {
+  font-size: 42px;
+}
+.insta-link{
+  display:block;
+  margin-top:20px;
+  font-size:20px;
+  text-decoration:none;
+  color:#8e2830;
+  letter-spacing:1px;
+  transition:0.3s;
+}
+
+.insta-link:hover{
+  color:#ca3f48;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN    */
+/* -------------------- */
+
+@media (max-width: 768px) {
+  .slide {
+    padding: 40px;
+  }
+
+  .inspired-wrapper {
+    height: 70vh;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .overlay-image {
+    left: 50%;
+    width: 200px;
+  }
+
+  .cover h1 {
+    font-size: 42px;
+  }
+}

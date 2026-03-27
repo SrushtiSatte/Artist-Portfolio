@@ -1,0 +1,74 @@
+
+/* -------------------- */
+/* SKILLS SLIDE         */
+/* -------------------- */
+
+.skills {
+  position: relative;
+  background: #faf7f5;   /* main background */
+  color: #222;
+  overflow: hidden;
+}
+.skills::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background: #611818;   /* change this color */
+  z-index: 0;
+}
+.skills h1 {
+  position: absolute;         /* stay above background image */
+  top:60px;
+  left:50px;
+  z-index: 1;
+  font-size: 140px;
+  margin-top: 10px;
+  font-family: Impact;
+  letter-spacing: 0.02cqi;
+  font-weight: 100;
+}
+.skills ul {
+  list-style: none;
+  left: 50px;     /* moves list a bit right */
+  padding: 0;
+  margin-top: 130px; 
+  color:#1e1919;
+}
+.skills ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 4;
+}
+
+.skills-images {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: 25%;     /* move right */
+  top: 35%;      /* move down */
+}
+.skills-images img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 0px solid #000000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.skills-images img:hover {
+  transform: scale(1.08);
+}
+.skills-text {
+  position: absolute;
+  bottom: 120px;      /* distance from bottom */
+  left: 39%;         /* move text to right */
+  max-width: 500px;        
+  text-align: right;  
+  font-size: 20px;
+  font-weight: 1000;
+  color: #921616;
+  z-index:5;
+}
