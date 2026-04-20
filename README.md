@@ -5,11 +5,10 @@
 A stunning, responsive artist portfolio website built with pure HTML, CSS, and JavaScript. Showcase your artworks, inspirations, skills, and connect with admirers through smooth animations and intuitive design.
 
 ## 🌐 Live Demo
-Your portfolio is live here:  
+Portfolio is live here:  
 **[https://vivalavidaportfolio.netlify.app/](https://vivalavidaportfolio.netlify.app/)**
-
-![Portfolio Preview](screenshots/preview.png)  
-*Note: Screenshot image will be added soon!*
+  
+![Porfolio Preview](images/SS.png)
 
 ## 📱 Responsive Preview
 Works perfectly on desktop, tablet, and mobile devices.
@@ -35,12 +34,8 @@ Works perfectly on desktop, tablet, and mobile devices.
 
 No build tools or servers required – it runs out-of-the-box.
 
-## 📸 Screenshots
-*Screenshots of key sections will be added here soon, including gallery, about, and mobile view.*
-
 ## 🤝 Contributing
 Feel free to fork and submit pull requests for improvements!
-![Porfolio Page](images/SS.png)
 
 ---
 
