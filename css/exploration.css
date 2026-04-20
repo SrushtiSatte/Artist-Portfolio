@@ -10,14 +10,21 @@
 }
 
 .exploration h1 {
+  font-size: 200px;
+  font-family: 'Kunstler Script';
+  color:#282323;
+  text-align: center;
+}
+
+.exploration p {
   font-size: 42px;
 }
 .insta-link{
   display:block;
-  margin-top:20px;
+  margin-top:10px;
   font-size:20px;
   text-decoration:none;
-  color:#8e2830;
+  color:#000000;
   letter-spacing:1px;
   transition:0.3s;
 }
